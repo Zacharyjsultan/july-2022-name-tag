@@ -2,6 +2,7 @@
     --background: rgb(224, 234, 247);
     --header-background: white;
     --footer-background: rgb(243, 242, 242);
+    --border-radius: 20px;
 }
 
 body {
@@ -32,4 +33,42 @@ footer {
     display: flex;
     justify-content: flex-end;
     background-color: var(--footer-background);
+}
+
+#name-tag {
+    height: 280px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+    border-radius: var(--border-radius);
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#greeting, #footer {
+    background-color: purple;
+    color: greenyellow;
+}
+#greeting {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    height: 75px;
+    padding: 20px;
+}
+#footer {
+    height: 35px;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    padding: 5px;
+}
+#name {
+    color: yellowgreen;
+    font-size: 50px;
+    font: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#name-tag {
+    background-color: black;
 }
